@@ -1,0 +1,107 @@
+@import './_varriables.scss';
+@import './_mixins.scss';
+/* Reset some default styles */
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+/* Set a base font size and style */
+body{
+    /* font-family: 'Roboto Mono', monospace; */
+    font-family: 'Inconsolata', monospace;
+    text-transform:initial;
+    max-width:1920px;
+    // margin:0 auto;
+	// overflow-x:hidden;
+}
+a {
+    color: $primary-color; /* Default link color */
+    text-decoration: none; /* Remove underlines by default */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+  }
+  
+  /* Change link color on hover */
+  a:hover {
+    color: $secondary-color; /* Color on hover */
+  }
+  
+  /* Optional: Visited link styles */
+//   a:visited {
+//     color: $accent-color; /* Color for visited links */
+//   }
+/* Navigation styles */
+.navbar{
+    min-height: 20px;
+    background-color: #eee;
+    padding: 10px;
+    .navbar-nav{
+        margin-left:20px;
+        li a{
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-right: 10px;
+        } 
+        &:active{
+            color: $primary-color;
+        }
+    }
+}
+// General Section style
+
+// *** Styling slider css
+.slider{
+    min-height: 80vh;
+    background-color: $accent-color;
+    @include flex-center();
+    flex-direction: column;
+    .slider-content{
+        .hello{
+            text-transform: uppercase;
+        }
+        h1{
+            font-size: 80px;
+        }
+        h2{
+            font-size: 42px;
+        }
+        p{
+            font-size: 17px;
+            line-height: 28px;
+            width: 70%;
+            
+        }
+        button{
+         @include buttons;   
+        }
+    }
+}
+// Styling about me section
+.about{
+    min-height: 100vh;
+    display: flex;
+    gap:10px;
+    @include flex-center();
+    .my-photo{
+        width: 50%;
+        @include flex-center();
+        img{
+            max-width: 60%;
+        }
+    }
+    .about-me{
+        width: 50%;
+        h2{
+            
+        }
+        p{
+            width: 70%;
+            font-size: 16px;
+        }
+        button{
+            @include buttons();
+        }
+    }
+}
+

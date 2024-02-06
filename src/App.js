@@ -1,4 +1,4 @@
-import './App.scss';
+import './assets/styles.scss'
 import Navbar from './components/Navbar';
 import Slider from './components/Slider';
 import About from './components/About';
