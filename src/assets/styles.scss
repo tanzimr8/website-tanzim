@@ -7,12 +7,16 @@ p {
   margin: 0;
   padding: 0;
 }
+p{
+    font-size: 15px;
+    font-weight: 400;
+}
 /* Set a base font size and style */
 body{
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Inconsolata', monospace;
     text-transform:initial;
-    max-width:1920px;
+    // max-width:1920px;
     // margin:0 auto;
 	// overflow-x:hidden;
 }
@@ -52,7 +56,7 @@ a {
 
 // *** Styling slider css
 .slider{
-    min-height: 80vh;
+    min-height: 90vh;
     background-color: $accent-color;
     @include flex-center();
     flex-direction: column;
@@ -80,7 +84,7 @@ a {
 // Styling about me section
 .about{
     min-height: 100vh;
-    display: flex;
+    // display: flex;
     gap:10px;
     @include flex-center();
     .my-photo{
@@ -92,9 +96,6 @@ a {
     }
     .about-me{
         width: 50%;
-        h2{
-            
-        }
         p{
             width: 70%;
             font-size: 16px;
@@ -105,3 +106,130 @@ a {
     }
 }
 
+// Styling the work experience section
+.work-experience{
+    min-height: 100vh;
+    @include flex-center();
+    flex-direction: column;
+    h2{
+        margin: 15px 0;
+    }
+    .works{
+        .card{
+            margin: 25px 0;
+            .card-body{
+                padding: 25px;
+                h5{
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                }
+                h6{ 
+                    font-style: italic;
+                }
+                ul li{
+                    color: #333;
+                }
+                a{
+                    color: $primary-color;
+                    font-weight: 800;
+                }
+            } 
+        } 
+    }
+}
+
+// Styling the project section
+.projects{
+    min-height:100vh;
+    @include flex-center;
+    flex-direction: column;
+    .projects-card{
+        display: flex;
+        padding: 0 3%;
+        .project-card{
+            min-width: 300px;
+            background-color: #fefefe;
+            padding: 30px;
+            .project-name{
+                h2{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    color: $primary-color;
+                    font-weight: 600;
+                }
+            }
+            .project-details{
+                padding: 20px;
+                background-color: #fff;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                margin: 15px 0;
+            }
+            .project-tools{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+                margin-bottom: 15px;
+                p{
+                    // color: #fff;
+                    background-color: $accent-color;
+                    padding: 5px 10px;
+                    font-size: 16px;
+                }
+                
+            }
+        }
+    }
+}
+// Styling the Contact section
+.contact{
+    min-height: 70vh;
+    background-color: $accent-color;
+    @include flex-center();
+    flex-direction: column;
+    .contact-card{
+        @include flex-center();
+        flex-direction: column;
+        width: 500px;
+        min-height: 250px;
+        padding: 50px 100px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        background-color: #fff;
+        transition: all 0.5s;
+        cursor: pointer;
+        border-radius: 30px;
+        &:hover{
+            background-color: $primary-color;
+            color: #fff!important;
+            a{
+                color:#fff;
+            }
+        }
+        h2{
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+        .contact-icons{
+            @include flex-center();
+            gap: 2em;
+            a{
+                font-size: 30px;
+            }
+        }
+
+    }
+    .contact-details{
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        margin: 10px 0;
+    }
+}
+footer{
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    min-height: 10vh;
+    @include flex-center();    
+}

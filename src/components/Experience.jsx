@@ -1,11 +1,12 @@
 import React from 'react'
-import Card from './utils/Card'
+import ExperienceCard from './ExperienceCard';
+import {data} from './../data/experience'
 const Experience = () => {
   return (
-    <section>
+    <section className='work-experience'>
         <h2>My Work Experince</h2>
         <div className="works">
-            <Card/>
+            <ExperienceCard experiences={data}/>
         </div>
     </section>
   )
