@@ -285,13 +285,12 @@ a:hover {
             }
 
             .dot-indicators {
-                display: flex!important;
                 position: absolute;
                 bottom: 1rem;
                 cursor: pointer;
-
+                display: flex;
+                gap: 5px;
                 .dot-indicator {
-                    display: flex;
                     flex-direction: row!important;
 
                 }

@@ -38,17 +38,20 @@ const RecentActivity = () => {
                         })
                     }
                     <div onClick={handleRightClick} className="arrow arrow-right"><FaChevronCircleRight size={30} /></div>
+                    <span className="dot-indicators">
                     {
                         activityData.map((_, index) => {
                             return (
-                                <span className="dot-indicators">
+                                
                                     <span key={index}  className="dot-indicator">
                                         <FaRegCircleDot />
                                     </span>
-                                </span>
+                                
                             )
                         })
+                    
                     }
+                    </span>
 
                 </div>
             </div>
