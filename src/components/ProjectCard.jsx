@@ -20,7 +20,7 @@ const ProjectCard = ({projectsData}) => {
                         })}
                     </div>
                     <div className="project-links">
-                    <a href={project.link}><FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                    <a href={project.link} target='_blank'>VIEW PROJECT <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
                     </div>
                 </div>
             )

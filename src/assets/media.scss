@@ -23,7 +23,9 @@
   }
   .slider{
     // padding: 0px 40px;
+    min-height: 70vh;
     .slider-content{
+      // text-align: center;
       .hello{
           text-transform: uppercase;
       }

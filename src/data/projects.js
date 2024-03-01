@@ -26,4 +26,23 @@ export const projectData = [
         github: false,
         githubLink: ''
     },
+    {
+        id:4,
+        title: 'Full Website for Contrivance',
+        details: 'A business to sell electronic products in Bangladesh. I created a form to provide the product registration feature for the customers. Also, I kept a store locator table in the site. I used the free "Astro theme to build the website."',
+        tools: ['Wordpress','Elementor'],
+        link: 'https://contrivance-bd.com/',
+        github: false,
+        githubLink: ''
+    },
+    {
+        id:5,
+        title: 'Quiz App for ASUS',
+        details: 'The app had 5 quizes containing 20 points and the user with the highest points would get a free ticket for the laptop fair. It had a backend with admin access to view the users who participated in the quiz. The app also generated unique tickets for the winners."',
+        tools: ['PHP','JavaScript','Bootstrap','MySQL'],
+        link: 'https://contrivance-bd.com/',
+        github: false,
+        githubLink: ''
+    },
+    
 ];

@@ -10,6 +10,8 @@ import Contact from './components/Contact';
 import Footer from './common/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-solid-svg-icons';
+import RecentActivity from './components/RecentActivity';
+
 
 function App() {
   return (
@@ -20,6 +22,7 @@ function App() {
       <About/>
       <Experience/>
       <Projects/>
+      <RecentActivity/>
       <Contact/>
       <Footer/>
     </div>

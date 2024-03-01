@@ -17,7 +17,7 @@ const ExperienceCard = ({experiences}) => {
                     return (<li>{responsibility}</li>)
                 })}
                 </ul>
-                <a href={experience.url} className="card-link">About Company <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
+                <a href={experience.url} target='_blank' className="card-link">About Company <FontAwesomeIcon icon={faExternalLinkAlt} /></a>
             </div>
         </div>
         );
