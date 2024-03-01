@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Title from './utils/Title'
 import { activityData } from '../data/activities';
-import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+// import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
+import { FaChevronLeft,FaChevronRight } from "react-icons/fa";
 import { FaRegCircle, FaRegCircleDot } from "react-icons/fa6";
 
 
@@ -12,14 +13,16 @@ const RecentActivity = () => {
     }
     const handleRightClick = () => {
         setCurrentSlide(currentSlide === activityData.length - 1 ? 0 : currentSlide + 1)
-
+    }
+    const handleDotClick = (getIndex)=>{
+        setCurrentSlide(getIndex);
     }
     return (
         <section id='activity' className='activity'>
             <Title title="Recent Activities" />
             <div className="activities-card-wrapper">
                 <div className="activities-card">
-                    <div className="arrow arrow-left" onClick={handleLeftClick}><FaChevronCircleLeft size={30} /></div>
+                    <div className="arrow arrow-left" onClick={handleLeftClick}><FaChevronLeft size={30} /></div>
                     {
                         activityData.map((activity, index) => {
                             return (
@@ -37,20 +40,19 @@ const RecentActivity = () => {
                             )
                         })
                     }
-                    <div onClick={handleRightClick} className="arrow arrow-right"><FaChevronCircleRight size={30} /></div>
+                    <div onClick={handleRightClick} className="arrow arrow-right"><FaChevronRight size={30} /></div>
                     <span className="dot-indicators">
-                    {
-                        activityData.map((_, index) => {
-                            return (
-                                
-                                    <span key={index}  className="dot-indicator">
-                                        <FaRegCircleDot />
+                        {
+                            activityData.map((_, index) => {
+                                return (
+                                    <span key={index} className="dot-indicator" onClick={()=>{handleDotClick(index)}}>
+                                        {currentSlide === index ? <FaRegCircleDot/> : <FaRegCircle/> }
                                     </span>
-                                
-                            )
-                        })
-                    
-                    }
+
+                                )
+                            })
+
+                        }
                     </span>
 
                 </div>

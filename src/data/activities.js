@@ -3,7 +3,7 @@ export const activityData = [
         id:1,
         title: 'Passed C11',
         date: 'December 15, 2023',
-        details: 'C11 is the first course for CIP. Took a course which started in Sweptember for this exam. '
+        details: 'C11 is the first course for CIP. Took a course which started in September for this exam. '
     },
     {
         id:2,
@@ -13,8 +13,8 @@ export const activityData = [
     },
     {
         id:3,
-        title: 'Bought a Car',
+        title: 'Bought a new Car',
         date: 'February 28, 2024',
-        details: 'Just bought my first car. Its Mazda3 2024. Something to remeber!  '
+        details: 'Just bought my first car. Its the Mazda3 2024. Something to remeber!  '
     }
 ];
