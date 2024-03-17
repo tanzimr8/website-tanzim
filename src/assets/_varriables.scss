@@ -1,5 +1,12 @@
-
 $primary-color: #0A3E3F;
 $secondary-color: #37C4B9;
 $accent-color: #D4EDEC;
 $nav-color: #eee;
+$text-color: #333;
+
+[data-theme="dark"] {
+    $primary-color: #37C4B9;
+    $secondary-color: #0A3E3F;
+    $accent-color: #0A3E3F;
+    $nav-color: #0A3E3F;
+}

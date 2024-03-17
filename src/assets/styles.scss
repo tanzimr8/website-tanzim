@@ -12,6 +12,7 @@ p {
 p {
     font-size: 15px;
     font-weight: 400;
+    color: $text-color;
 }
 
 /* Set a base font size and style */
@@ -19,6 +20,8 @@ body {
     /* font-family: 'Roboto Mono', monospace; */
     font-family: 'Inconsolata', monospace;
     text-transform: initial;
+    margin: 0;
+    padding: 0;
     // max-width:1920px;
     // margin:0 auto;
     // overflow-x:hidden;
@@ -74,12 +77,28 @@ a:hover {
     }
 }
 
+// scroll-indicator
+.scroll-indicator {
+    position: fixed;
+    height: 10px;
+    margin-top: 75px;
+    width: 100%;
+    background-color: $secondary-color;
+    z-index: 1;
+    .current-scroll {
+        height: 10px;
+        background-color: $primary-color;
+    }
+}
+
+
 // General Section style
 
 // *** Styling slider css
 .slider {
     min-height: 100vh;
-    margin-top: 60px;
+    // margin-top: 60px;
+    padding-top: 60px;
     background-color: $accent-color;
     @include flex-center();
     flex-direction: column;
@@ -290,8 +309,9 @@ a:hover {
                 cursor: pointer;
                 display: flex;
                 gap: 5px;
+
                 .dot-indicator {
-                    flex-direction: row!important;
+                    flex-direction: row !important;
 
                 }
             }

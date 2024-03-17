@@ -1,7 +1,7 @@
 import React from 'react'
 import ChangeTheme from './utils/ChangeTheme'
 
-const Navbar = () => {
+const Navbar = ({theme,setTheme,handleChangeTheme}) => {
     return (
         <>
             <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
@@ -39,11 +39,14 @@ const Navbar = () => {
                 </li> */}
                         </ul>
                         <span class="navbar-text">
-                            <ChangeTheme/>
+                            <ChangeTheme theme={theme} setTheme={setTheme} handleChangeTheme={handleChangeTheme}/>
                         </span>
                     </div>
                 </div>
+
             </nav>
+            
+
         </>
     )
 }
