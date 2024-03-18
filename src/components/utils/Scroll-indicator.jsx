@@ -6,7 +6,6 @@ const ScrollIndicator = () => {
         const totalScrolled = document.documentElement.scrollTop;
         const elementHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
         setScroll(Math.round(totalScrolled/elementHeight * 100));
-        console.log(scroll);
     }
     useEffect(()=>{
         window.addEventListener('scroll',handleScrollChange);

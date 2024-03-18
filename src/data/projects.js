@@ -1,4 +1,4 @@
-export const projectData = [
+export const data = [
     {
         id:1,
         title: 'FULL WEBSITE WITH WORDPRESS FOR HERITAGE ARCHIVES',
