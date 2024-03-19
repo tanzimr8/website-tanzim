@@ -277,6 +277,7 @@ a:hover {
     padding: 50px 0;
 
     .activities-card-wrapper {
+        background-color: #fefefe;
         .activities-card {
             width: 600px;
             height: 300px;
@@ -394,8 +395,10 @@ a:hover {
 
 footer {
     background-color: $primary-color;
-    color: #fff;
     text-align: center;
     min-height: 10vh;
     @include flex-center();
+    p{
+        color: #fff!important;
+    }
 }
