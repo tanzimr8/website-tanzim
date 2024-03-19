@@ -1,16 +1,21 @@
 import React, { useState } from 'react'
 
-const ProjectTab = ({projectsData,setProjectData}) => {
-    const [projectCategory,setProjectCategory] = useState([]);
+const ProjectTab = ({ projectData,selectedCategory, setSelectedCategory,filteredCategory,setFilteredProjectData, handleCategoryChange }) => {
     return (
         <>
-            <p className='active'>All</p>
-            {projectsData.map((project)=>{
-                project.tools.map((tool)=>{
-                    const newArr = [...projectCategory,tool];
-                    setProjectCategory(...newArr)
-                })
-            })}
+            <div className="project-tab">
+                {/* Render project tools */}
+                <p className={selectedCategory === 'All' ? 'active' : null} onClick={() => {
+                    setSelectedCategory('All');
+                    setFilteredProjectData(projectData)
+                }}>All</p>
+                {filteredCategory.map((category) => {
+                    return (
+                        <p className={selectedCategory === category ? 'active' : null} key={category} onClick={() => { handleCategoryChange(category) }}>{category}</p>
+                    )
+
+                })}
+            </div>
         </>
     )
 }
