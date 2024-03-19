@@ -227,7 +227,7 @@ a:hover {
         display: flex;
         padding: 0 3%;
         flex-wrap: wrap;
-
+        transition: all 3s;
         .project-card {
             min-width: 300px;
             background-color: #fefefe;
