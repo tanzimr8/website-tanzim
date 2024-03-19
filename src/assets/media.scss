@@ -26,8 +26,13 @@
     min-height: 70vh;
     .slider-content{
       // text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       .hello{
           text-transform: uppercase;
+          text-align: center;
       }
       h1{
           font-size: 50px;
@@ -39,6 +44,7 @@
           font-size: 17px;
           line-height: 28px;
           width: 70%;
+          text-align: center;
           
       }
     }
@@ -61,7 +67,7 @@
   }
   .projects{
     .projects-card{
-      flex-direction: column;
+      grid-template-columns: 1fr;
     }
   }
 }

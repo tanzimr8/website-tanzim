@@ -21,6 +21,16 @@ export const data = [
     },
     {
         id:3,
+        title: 'E-Commerce Website for Dolbear tech',
+        details: 'This is a complete woocommerce based website for selling electronic products in Bangladesh. They are the OnePlus dealer in bangladesh. I used the woodmart theme also for this site',
+        tools: ['Wordpress', 'Elementor', 'Woocommerce'],
+        category: 'ECommerce',
+        link: 'https://dolbear.tech/',
+        github: false,
+        githubLink: ''
+    },
+    {
+        id:4,
         title: 'Laptop Review Event Landing Page',
         details: 'It was an event for Asus Bangladesh. The user had to fill up thier basic information and show the proof of thier laptop review by uploading the sceenshot and the link. The web form I developed was able to collect over 100 reviews. There was also a backend to check the sumitted reviews and mark them. ',
         tools: ['PHP', 'Laravel', 'JavaScript', 'Bootstrap'],
@@ -30,7 +40,7 @@ export const data = [
         githubLink: ''
     },
     {
-        id:4,
+        id:5,
         title: 'Full Website for Contrivance',
         details: 'A business to sell electronic products in Bangladesh. I created a form to provide the product registration feature for the customers. Also, I kept a store locator table in the site. I used the free "Astro theme to build the website."',
         tools: ['Wordpress','Elementor'],
@@ -40,7 +50,7 @@ export const data = [
         githubLink: ''
     },
     {
-        id:5,
+        id:6,
         title: 'Quiz App for ASUS',
         details: 'The app had 5 quizes containing 20 points and the user with the highest points would get a free ticket for the laptop fair. It had a backend with admin access to view the users who participated in the quiz. The app also generated unique tickets for the winners."',
         tools: ['PHP','JavaScript','Bootstrap','MySQL'],

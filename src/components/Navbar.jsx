@@ -38,9 +38,7 @@ const Navbar = ({theme,setTheme,handleChangeTheme}) => {
                     </ul>
                 </li> */}
                         </ul>
-                        <span class="navbar-text">
-                            <ChangeTheme theme={theme} setTheme={setTheme} handleChangeTheme={handleChangeTheme}/>
-                        </span>
+                        
                     </div>
                 </div>
 

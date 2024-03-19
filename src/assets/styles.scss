@@ -202,7 +202,7 @@ a:hover {
 // Styling the project section
 .projects {
     min-height: 100vh;
-    padding: 3% 0;
+    padding: 6% 0;
     @include flex-center;
     flex-direction: column;
     .project-tabs{
@@ -224,9 +224,9 @@ a:hover {
         }
     }
     .projects-card {
-        display: flex;
+        display: grid;
         padding: 0 3%;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(3,1fr);
         transition: all 3s;
         .project-card {
             min-width: 300px;

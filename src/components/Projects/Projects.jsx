@@ -8,8 +8,8 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [filteredProjectData, setFilteredProjectData] = useState([...projectData]);
 
-  const filteredCategory = [...new Set(projectData.map((project) => {
-    return project.category;
+  const filteredCategory = [...new Set(projectData.map((project) => { //Set: get the unique sets of category instead of repeated value
+    return project.category; 
   }))];
 
   const handleCategoryChange = (getCurrentCategory) => {

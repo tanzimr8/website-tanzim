@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const ProjectTab = ({ projectData,selectedCategory, setSelectedCategory,filteredCategory,setFilteredProjectData, handleCategoryChange }) => {
+const ProjectTab = ({ projectData, selectedCategory, setSelectedCategory, filteredCategory, setFilteredProjectData, handleCategoryChange }) => {
     return (
         <>
             <div className="project-tab">
