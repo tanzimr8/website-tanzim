@@ -8,8 +8,6 @@ import Experience from './components/Experience';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact';
 import Footer from './common/Footer';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-solid-svg-icons';
 import RecentActivity from './components/RecentActivity';
 import ChangeTheme from './components/utils/ChangeTheme';
 import useLocalStorage from './components/CustomHooks/useLocalStorage';
