@@ -15,6 +15,6 @@ export const activityData = [
         id:3,
         title: 'Bought a new Car',
         date: 'February 28, 2024',
-        details: 'Just bought my first car. Its the Mazda3 2024. Something to remeber!  '
+        details: 'Just bought my first car. Its the Mazda3 2024. Something to remember!  '
     }
 ];

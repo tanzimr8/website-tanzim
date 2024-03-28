@@ -1,7 +1,7 @@
 export const data = [
     {
         id:1,
-        title: 'FULL WEBSITE WITH WORDPRESS FOR HERITAGE ARCHIVES',
+        title: 'FULL WEBSITE FOR HERITAGE ARCHIVES',
         details: 'Wordpress based full website to showcase the collection of the archives. Developed a catalog classification to show the types of collection the archive has. Users can also view the publications which are made with the Custom post type plugin in wordpress.',
         tools: ['Wordpress', 'Elementor'],
         category: 'WordPress',
@@ -16,16 +16,6 @@ export const data = [
         tools: ['Wordpress', 'Elementor', 'Woocommerce'],
         category: 'ECommerce',
         link: 'https://lookshopbd.com',
-        github: false,
-        githubLink: ''
-    },
-    {
-        id:3,
-        title: 'E-Commerce Website for Dolbear tech',
-        details: 'This is a complete woocommerce based website for selling electronic products in Bangladesh. They are the OnePlus dealer in bangladesh. I used the woodmart theme also for this site',
-        tools: ['Wordpress', 'Elementor', 'Woocommerce'],
-        category: 'ECommerce',
-        link: 'https://dolbear.tech/',
         github: false,
         githubLink: ''
     },
@@ -55,7 +45,7 @@ export const data = [
         details: 'The app had 5 quizes containing 20 points and the user with the highest points would get a free ticket for the laptop fair. It had a backend with admin access to view the users who participated in the quiz. The app also generated unique tickets for the winners."',
         tools: ['PHP','JavaScript','Bootstrap','MySQL'],
         category: 'PHP',
-        link: 'https://contrivance-bd.com/',
+        link: '#',
         github: false,
         githubLink: ''
     },
