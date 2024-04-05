@@ -14,7 +14,7 @@ const ExperienceCard = ({experiences}) => {
                 <h6 className="card-subtitle mb-2 text-muted">{experience.start} - {experience.end} | {experience.location}</h6>
                 <ul>
                 {experience.responsibilities.map((responsibility,index)=>{
-                    return (<li key={index}>{responsibility}</li>)
+                    return (<li className='responsibility' key={index}>{responsibility}</li>)
                 })}
                 </ul>
                 <a href={experience.url} target='_blank' className="card-link">About Company <FontAwesomeIcon icon={faExternalLinkAlt} /></a>

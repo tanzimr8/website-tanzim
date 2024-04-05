@@ -1,15 +1,15 @@
 import React from 'react'
 // import ChangeTheme from './utils/ChangeTheme'
 
-const Navbar = ({theme,setTheme,handleChangeTheme}) => {
+const Navbar = ({ theme, setTheme, handleChangeTheme }) => {
     return (
         <>
             <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">TR</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
+                    <a className="navbar-brand" href="#">TR</a>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
@@ -28,12 +28,12 @@ const Navbar = ({theme,setTheme,handleChangeTheme}) => {
                                 <a className="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
-                        
+
                     </div>
                 </div>
 
             </nav>
-            
+
 
         </>
     )

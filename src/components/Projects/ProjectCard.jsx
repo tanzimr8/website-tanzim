@@ -1,11 +1,11 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-const ProjectCard = ({ filteredProjectData}) => {
+const ProjectCard = ({ filteredProjectData,visibleProjectCount}) => {
     return (
         <>
             {
-                filteredProjectData.map((project, index) => (
+                filteredProjectData.map((project, index,card) => (
                     <div className="project-card" key={index}>
                         <div className="project-name">
                             <h2>{project.title}</h2>

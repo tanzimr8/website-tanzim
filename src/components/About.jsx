@@ -11,9 +11,9 @@ const About = () => {
         </div>
         <div className="about-me">
             <Title title='About me'/>
-            <p>I would love to introduce me as a traveler. I have been Traveling from the ins and outs of Bangladesh to the beautiful hilly towns besides the Atlantic ocean in Newfoundland, Canada. After travelling my passion comes for coding.<br/>
-            I have been working with the web technologies such as JavaScript(ES6), HTML, CSS, Bootstrap, React etc. I have a 4 years of professional experience in Web Development. In my workplace I used to work with WorpdPress. But, at this moment I am training myself as Frontend Engineer and UX designer in future.<br/>
-            After moving to Canada I started working in Sobeys as a Sales Cashier. Now, I am working as a Customer Service Representative - Auto claims in Intact insurance company. It has been a very new experience for me and Its exciting and helping me to improve my problem solving ability.</p>
+            <p><strong>I would love to introduce </strong> me as a traveler. I have been Traveling from the ins and outs of Bangladesh to the beautiful hilly towns besides the Atlantic ocean in Newfoundland, Canada. After travelling my passion comes for coding.<br/>
+            <strong>I have been working </strong> with the web technologies such as JavaScript(ES6), HTML, CSS, Bootstrap, React etc. I have a 4 years of professional experience in Web Development. In my workplace I used to work with WorpdPress, PHP and Laravel. But, at this moment I am training myself as Frontend Engineer. My expertise is in Javascript, React JS, Bootstrap and HTML/CSS<br/>
+            <strong>After moving to Canada</strong> I started working in Sobeys as a Sales Cashier. Then , I worked as a Customer Service Representative in the auto claims department in Intact insurance company. It had been a very new experience for me and It was exciting and helped me to improve my problem solvi ng ability.</p>
             <a href={Resume} target='_blank' download  ><Button text='Download my CV'/></a>
         </div>
     </section>

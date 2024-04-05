@@ -4,11 +4,18 @@ export const data =  [
         position: 'Customer Service Representative',
         company: 'Intact Insurance' ,
         start: 'November 2022',
-        end: 'present',
+        end: 'April 2024',
         location: "St. John's, NL",
-        responsibilities: ['Openning auto claim', 'Assist with existing claims','adjusting claims'],
+        responsibilities: ['Opened 5-10 new auto claims daily by taking detailed information about the incident.',
+         'organized appointments, rental car, and recommendations for auto repair shops',
+         'Answered 20-30 calls daily regarding queries and updates on the claim. Provided solution to customers existing needs regarding the claim.',
+         'Actively listened and obtained the driver statement, asked clarifying questions, and paraphrased them in a way that helped the adjuster confirm liability.'],
         url: 'https://www.intact.ca/'
     },
+//     Opened 7-10 new claims daily by taking detailed information about the accident.
+// • Showed sympathy for the insureds and organized appointments, a rental car, and recommendations for auto repair shops.
+// • Answered 10-12 calls daily regarding queries and updates on the claim. Provide them with a one-call resolution.
+// • Actively listened and filed the insured statement, asked clarifying questions, and paraphrased them in a way that helped the adjuster confirm liability.
     {
         id:2,
         position: 'Cashier',
