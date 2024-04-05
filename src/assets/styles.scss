@@ -19,6 +19,7 @@ body {
     text-transform: initial;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     // max-width:1920px;
     // margin:0 auto;
     // overflow-x:hidden;
@@ -83,6 +84,7 @@ a:hover {
     width: 100%;
     background-color: #ddd;
     z-index: 1;
+
     .current-scroll {
         height: 100%;
         background-color: $primary-color;
@@ -203,36 +205,41 @@ a:hover {
     padding: 6% 0;
     @include flex-center;
     flex-direction: column;
-    .project-tabs{
-        .project-tab{
+
+    .project-tabs {
+        .project-tab {
             display: flex;
             gap: 5px;
+
             // border-bottom: 5px solid $primary-color;
-            p{
+            p {
                 cursor: pointer;
                 text-transform: uppercase;
                 padding: 10px;
                 text-align: center;
                 background-color: $accent-color;
-                &.active{
+
+                &.active {
                     background-color: $primary-color;
                     color: #fff;
                 }
             }
         }
     }
+
     .projects-card {
-        display: grid;
-        padding: 0 3%;
-        grid-template-columns: repeat(3,1fr);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         transition: all 3s;
+
         .project-card {
             min-width: 300px;
+            flex: 0 1 calc(33.33% - 20px);
+            margin: 10px;
             background-color: #fefefe;
             padding: 30px;
-            margin: 10px 10px;
-            flex: 33.3%;
-
+            box-sizing: border-box;
             .project-name {
                 h2 {
                     font-size: 20px;
@@ -275,12 +282,13 @@ a:hover {
     padding: 50px 0;
 
     .activities-card-wrapper {
+
         // background-color: #fefefe;
         .activities-card {
-            width: 800px;
-            height: 300px;  
+            max-width: 800px;
+            height: 300px;
             background-color: rgba(55, 196, 185, 0.2);
-            padding: 10px 80px; 
+            padding: 10px 80px;
             margin: 10px 10px;
             display: flex;
             position: relative;
@@ -290,6 +298,7 @@ a:hover {
             // border-bottom: 3px solid $primary-color;
             // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             box-shadow: rgba(55, 196, 185, 0.4) 0px 7px 29px 0px;
+
             .arrow {
                 position: absolute;
                 color: #555;
@@ -328,6 +337,7 @@ a:hover {
                 display: flex;
                 gap: 5px;
                 color: $primary-color;
+
                 .dot-indicator {
                     flex-direction: row !important;
 
@@ -398,7 +408,8 @@ footer {
     text-align: center;
     min-height: 10vh;
     @include flex-center();
-    p{
-        color: #fff!important;
+
+    p {
+        color: #fff !important;
     }
 }
