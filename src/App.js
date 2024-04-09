@@ -17,8 +17,8 @@ import ScrollIndicator from './components/utils/Scroll-indicator';
 function App() {
   const [theme, setTheme] = useLocalStorage('theme', 'dark');
   const handleChangeTheme = () => {
-      setTheme(theme === 'light' ? 'dark' : 'light');
-      document.documentElement.style.setProperty("--primary-color", "red");
+    setTheme(theme === 'light' ? 'dark' : 'light');
+    document.documentElement.style.setProperty("--primary-color", "red");
 
   }
 
@@ -26,13 +26,16 @@ function App() {
     <div className="App" data-theme={theme}>
       {/* <Social/> */}
       {/* <ChangeTheme /> */}
-      <ScrollIndicator/>
-      <Navbar theme={theme} setTheme={setTheme} handleChangeTheme={handleChangeTheme}/>
+      <ScrollIndicator />
+      <Navbar theme={theme} setTheme={setTheme} handleChangeTheme={handleChangeTheme} />
+
       <Slider />
-      <About />
-      <Experience />
-      <Projects />
-      <RecentActivity />
+      <div className='container'>
+        <About />
+        <Experience />
+        <Projects />
+        {/* <RecentActivity /> */}
+      </div>
       <Contact />
       <Footer />
     </div>

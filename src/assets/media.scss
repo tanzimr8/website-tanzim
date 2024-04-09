@@ -2,139 +2,298 @@
 @import './_varriables.scss';
 @import './_mixins.scss';
 @media screen and (max-width: 600px) {
-  section{
-    padding: 4% 5%;
-  }
-  .navbar{
-    min-height: 20px;
-    background-color: #eee;
-    padding: 10px;
-    .navbar-nav{
-        margin-left:20px;
-        li a{
-            text-decoration: none;
-            text-transform: uppercase;
-            margin-right: 10px;
-        } 
-        &:active{
-            color: $primary-color;
+    section {
+        padding: 4% 5%;
+    }
+
+    .navbar {
+        min-height: 20px;
+        background-color: #eee;
+        padding: 10px;
+
+        .navbar-nav {
+            margin-left: 20px;
+
+            li a {
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-right: 10px;
+            }
+
+            &:active {
+                color: $primary-color;
+            }
         }
     }
-  }
-  .slider{
-    // padding: 0px 40px;
-    min-height: 70vh;
-    .slider-content{
-      // text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      .hello{
-          text-transform: uppercase;
-          text-align: center;
-      }
-      h1{
-          font-size: 50px;
-      }
-      h2{
-          font-size: 28px;
-      }
-      p{
-          font-size: 17px;
-          line-height: 28px;
-          width: 70%;
-          text-align: center;
-          
-      }
-    }
-  }
-  .about{
-    flex-direction: column;
-    .my-photo{
-      width: 90%;
-      img{
-          max-width: 90%;
-      }
-    }
-    .about-me{
-      width: 80%;
-      p{
-          width: 100%;
-          // text-align: center;
-      }
-    }
-  }
-  .projects{
-    .projects-card{
-      grid-template-columns: 1fr;
-    }
-  }
-  .activity {
-    display: none!important;
 
-    .activities-card-wrapper {
-        // background-color: #fefefe;
-        .activities-card {
-            width: 800px;
-            height: 300px;  
-            background-color: rgba(55, 196, 185, 0.2);
-            padding: 10px 80px; 
-            margin: 10px 10px;
+    .slider {
+        // padding: 0px 40px;
+        padding: 40px;
+        min-height: 90vh;
+
+        .slider-content {
+            // text-align: center;
             display: flex;
-            position: relative;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            // border-bottom: 3px solid $primary-color;
-            // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            box-shadow: rgba(55, 196, 185, 0.4) 0px 7px 29px 0px;
-            .arrow {
-                display: none;
+
+            .hello {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 17px;
             }
 
-            .arrow-left {
-                left: 2rem;
+            h1 {
+                font-size: 50px;
+                line-height: 50px;
+                text-align: center;
+                margin-bottom: 10px;
             }
 
-            .arrow-right {
-                right: 2rem;
+            h2 {
+                font-size: 24px;
             }
 
-            .activity {
-                .activity-name {
-                    font-size: 20px;
+            p {
+                font-size: 17px;
+                line-height: 28px;
+                width: 100%;
+                text-align: center;
 
+            }
+        }
+    }
+
+    .about {
+        flex-direction: column;
+
+        .my-photo {
+            width: 90%;
+
+            img {
+                max-width: 90%;
+            }
+        }
+
+        .about-me {
+            width: 80%;
+
+            p {
+                width: 100%;
+                // text-align: center;
+            }
+        }
+    }
+
+    // Styling the work experience section
+    .work-experience {
+        min-height: 100vh;
+        @include flex-center();
+        flex-direction: column;
+
+        h2 {
+            margin: 15px 0;
+        }
+
+        .works {
+            .card {
+                margin: 25px 0;
+                width: 100%;
+
+                .card-body {
+                    padding: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h5 {
+                        font-size: 22px;
+                        margin-bottom: 15px;
+                    }
+
+                    h6 {
+                        font-style: italic;
+                    }
+
+                    ul li {
+                        color: #333;
+                        // width: 80%;
+                        margin: 5px 0;
+                    }
+
+                    a {
+                        color: $primary-color;
+                        font-weight: 800;
+                    }
                 }
-
-                .activity-date {
-                    font-style: italic;
-                }
-
-                .activity-details {
-                    width: 90%;
-                    font-size: 18px;
-                    text-align: center;
-                }
             }
+        }
+    }
 
-            .dot-indicators {
-                position: absolute;
-                bottom: 1rem;
-                cursor: pointer;
+    // Styling the project section
+    .projects {
+        min-height: 100vh;
+        padding: 6% 0;
+        @include flex-center;
+        flex-direction: column;
+
+        .project-tabs {
+            .project-tab {
                 display: flex;
                 gap: 5px;
-                color: $primary-color;
-                .dot-indicator {
-                    flex-direction: row !important;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 10px 0;
+                // border-bottom: 5px solid $primary-color;
+            }
+        }
 
+        .projects-card {
+            .project-card {
+                width: 100%;
+                grid-template-columns: 1fr;
+
+                .project-name {
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+
+                .project-details {
+                    padding: 20px;
+                    background-color: #fff;
+                    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                    margin: 15px 0;
+                }
+
+                .project-tools {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                    margin-bottom: 15px;
+
+                    p {
+                        // color: #fff;
+                        background-color: $accent-color;
+                        padding: 5px 10px;
+                        font-size: 16px;
+                    }
+
+                }
+
+            }
+
+            button {
+                @include buttons;
+            }
+        }
+    }
+
+    .projects {
+        .projects-card {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .activity {
+        display: none !important;
+
+        .activities-card-wrapper {
+
+            // background-color: #fefefe;
+            .activities-card {
+                width: 800px;
+                height: 300px;
+                background-color: rgba(55, 196, 185, 0.2);
+                padding: 10px 80px;
+                margin: 10px 10px;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                // border-bottom: 3px solid $primary-color;
+                // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                box-shadow: rgba(55, 196, 185, 0.4) 0px 7px 29px 0px;
+
+                .arrow {
+                    display: none;
+                }
+
+                .arrow-left {
+                    left: 2rem;
+                }
+
+                .arrow-right {
+                    right: 2rem;
+                }
+
+                .activity {
+                    .activity-name {
+                        font-size: 20px;
+
+                    }
+
+                    .activity-date {
+                        font-style: italic;
+                    }
+
+                    .activity-details {
+                        width: 90%;
+                        font-size: 18px;
+                        text-align: center;
+                    }
+                }
+
+                .dot-indicators {
+                    position: absolute;
+                    bottom: 1rem;
+                    cursor: pointer;
+                    display: flex;
+                    gap: 5px;
+                    color: $primary-color;
+
+                    .dot-indicator {
+                        flex-direction: row !important;
+
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    // Styling the Contact section
+    .contact {
+        min-height: 50vh;
+
+        .contact-card {
+            width: 100%;
+            padding: 30px;
+            border-radius: 10px;
+
+            h2 {
+                font-size: 25px;
+            }
+
+            .contact-icons {
+                @include flex-center();
+                gap: 2em;
+                color: $primary-color;
+
+                a {
+                    font-size: 30px;
                 }
             }
 
         }
+
+        .contact-details {
+            margin: 5px 0;
+        }
     }
 
-}
-  
-}
 
+}
