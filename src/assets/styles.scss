@@ -104,6 +104,7 @@ a:hover {
     flex-direction: column;
 
     .slider-content {
+        padding-left: 30px;
         .hello {
             text-transform: uppercase;
             font-size: 22px;
@@ -118,7 +119,7 @@ a:hover {
         }
 
         p {
-            font-size: 18px;
+            font-size: 16px;
             line-height: 28px;
             width: 70%;
 
@@ -138,7 +139,7 @@ a:hover {
     @include flex-center();
 
     .my-photo {
-        width: 50%;
+        width: 60%;
         @include flex-center();
 
         img {
@@ -151,7 +152,7 @@ a:hover {
 
         p {
             width: 70%;
-            font-size: 17px;
+            font-size: 16px;
         }
 
         button {
@@ -211,12 +212,10 @@ a:hover {
     padding: 6% 0;
     @include flex-center;
     flex-direction: column;
-
     .project-tabs {
         .project-tab {
             display: flex;
             gap: 5px;
-
             // border-bottom: 5px solid $primary-color;
             p {
                 cursor: pointer;
@@ -255,14 +254,14 @@ a:hover {
             align-items: center;
             margin: 10px;
             // background-color: #fefefe;
-            padding: 50px 30px;
+            padding: 50px 20px;
             box-sizing: border-box;
             box-shadow: rgba(55, 196, 185, 0.2) 0px 7px 29px 0px;
 
             .project-name {
                 h2 {
-                    font-size: 20px;
-                    text-transform: uppercase;
+                    font-size: 22px;
+                    // text-transform: capitalize;
                     color: $primary-color;
                     font-weight: 600;
                 }
