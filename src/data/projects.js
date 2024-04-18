@@ -12,7 +12,7 @@ export const data = [
     },
     {
         id:2,
-        title: 'An online Retail Platform With WooCommerce and Elementor',
+        title: 'An online Retail Platform With WooCommerce',
         details: 'This is a complete eCommerce based website for selling cosmetic products. The business has over 2000 products and they have started selling through this eCommerce. I developed a customized chekout page for different delivery type.',
         tools: ['Wordpress', 'Elementor', 'Woocommerce'],
         category: 'ECommerce',
@@ -23,7 +23,7 @@ export const data = [
     },
     {
         id:3,
-        title: 'Laravel Developed Landing Page for ASUS to collect user review',
+        title: 'Laravel Developed Landing Page to collect review',
         details: 'It was an event for Asus Bangladesh. The user had to submit the proof of thier laptop review by uploading the sceenshot and the link. The web form I developed was able to collect over 100 reviews. There was also a backend to check the sumitted reviews and mark them. ',
         tools: ['PHP', 'Laravel', 'Bootstrap'],
         category: 'Laravel',
@@ -34,7 +34,7 @@ export const data = [
     },
     {
         id:4,
-        title: 'Wordpress site of the flagship store for OnePlus in Bangldesh',
+        title: 'Wordpress site of the flagship store for OnePlus',
         details: 'A business to sell electronic products in Bangladesh. I created a form to provide the product registration feature for the customers. Also, I kept a store locator table in the site. I used the free "Astro theme to build the website."',
         tools: ['Wordpress','Elementor'],
         category: 'WordPress',
@@ -67,7 +67,7 @@ export const data = [
     },
     {
         id:7,
-        title: 'Weather app with OPEN WEATHER APP API and React JS',
+        title: 'Weather app with OWM API and React JS',
         details: 'This is a project for skill development. I have used an API from OpenWeatherMap. I used a search component to search a city name and based on that search another component will show the weather of that city. To deploy, I used netlifly.',
         tools: ['React', 'JavaScript','Netlifly'],
         category: 'React',
