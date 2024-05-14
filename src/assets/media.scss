@@ -28,8 +28,9 @@
 
     .slider {
         // padding: 0px 40px;
-        padding: 60px 20px;
-        min-height: 70vh;
+        // padding: 60px 20px;
+        min-height: 80vh;
+        // padding-top: 60px;
 
         .slider-content {
             // text-align: center;
@@ -37,7 +38,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
+            width: 100vw;
+            padding: 60px 30px;
             .hello {
                 text-transform: uppercase;
                 text-align: center;
@@ -49,16 +51,17 @@
                 line-height: 50px;
                 text-align: center;
                 margin-bottom: 10px;
+                font-weight: 700;
             }
 
             h2 {
-                font-size: 24px;
+                font-size: 20px;
             }
 
             p {
                 font-size: 17px;
                 line-height: 28px;
-                width: 100%;
+                width: 90%;
                 text-align: center;
 
             }
@@ -153,7 +156,8 @@
             .project-card {
                 width: 100%;
                 grid-template-columns: 1fr;
-                padding: 25px;   
+                padding: 25px;
+
                 .project-name {
                     h2 {
                         font-size: 20px;

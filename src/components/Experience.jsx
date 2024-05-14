@@ -1,10 +1,11 @@
 import React from 'react'
 import ExperienceCard from './ExperienceCard';
-import {data} from './../data/experience'
+import {data} from './../data/experience';
+import Title from './utils/Title'
 const Experience = () => {
   return (
     <section id="work-experience" className='work-experience'>
-        <h2>My Work Experince</h2>
+        <Title title='My Work Experince'/>
         <div className="works">
             <ExperienceCard experiences={data}/>
         </div>

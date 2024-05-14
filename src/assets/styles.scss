@@ -43,7 +43,10 @@ a:hover {
 .hide {
     display: none;
 }
-
+.section-title{
+    font-weight: 700;
+    text-transform: uppercase;
+}
 /* Optional: Visited link styles */
 //   a:visited {
 //     color: $accent-color; /* Color for visited links */
@@ -104,7 +107,7 @@ a:hover {
     flex-direction: column;
 
     .slider-content {
-        padding-left: 30px;
+        // padding-left: 30px;
 
         .hello {
             text-transform: uppercase;
@@ -113,10 +116,11 @@ a:hover {
 
         h1 {
             font-size: 80px;
+            font-weight: 700;
         }
 
         h2 {
-            font-size: 40px;
+            font-size: 28px;
         }
 
         p {
