@@ -52,6 +52,25 @@ a:hover {
 //     color: $accent-color; /* Color for visited links */
 //   }
 /* Navigation styles */
+.social-icons-container{
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        color: $primary-color;
+        font-size: 18px;
+        gap: 16px;
+        padding-left: 4px;
+        // background-color: #fff;
+        padding: 8px;
+        // writing-mode: vertical-rl;
+
+    }
+
+}
 .navbar {
     // min-height: 20px;
     background-color: $nav-color;

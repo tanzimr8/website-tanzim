@@ -24,11 +24,10 @@ function App() {
 
   return (
     <div className="App" data-theme={theme}>
-      {/* <Social/> */}
       {/* <ChangeTheme /> */}
       <ScrollIndicator />
       <Navbar theme={theme} setTheme={setTheme} handleChangeTheme={handleChangeTheme} />
-
+      <Social/>
       <Slider />
       <div className='container'>
         <About />

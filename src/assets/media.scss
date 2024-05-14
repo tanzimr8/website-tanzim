@@ -67,7 +67,10 @@
             }
         }
     }
+.social-icons-container{
+    display: none;
 
+}
     .about {
         flex-direction: column;
 
@@ -156,7 +159,7 @@
             .project-card {
                 width: 100%;
                 grid-template-columns: 1fr;
-                padding: 25px;
+                padding: 15px;
 
                 .project-name {
                     h2 {
@@ -165,10 +168,10 @@
                 }
 
                 .project-details {
-                    padding: 20px 25px;
+                    padding: 10px 15px;
                     background-color: #fff;
                     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-                    margin: 15px 0;
+                    margin: 5px 0;
                 }
 
                 .project-tools {
