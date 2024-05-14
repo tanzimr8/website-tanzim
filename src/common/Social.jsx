@@ -13,12 +13,12 @@ const Social = () => {
   return (
     <div className='social-icons-container'>
       <div className="social-icons">
-        <FaLinkedinIn />
-        <FaGithub />
-        <FaGoodreadsG />
-        <FaInstagram />
-        <FaFacebookF />
-        <FaXTwitter />
+        <a target='_blank'  href='https://www.linkedin.com/in/tanzim-rahman08/'><FaLinkedinIn/></a>
+        <a target='_blank' href='https://github.com/tanzimr8'><FaGithub/></a>
+        <a target='_blank' href='https://www.goodreads.com/tanzimr8'><FaGoodreadsG/></a>
+        <a target='_blank' href='https://www.instagram.com/tanzim_r_'><FaInstagram/></a>
+        <a target='_blank' href='https://www.facebook.com/taanzim'><FaFacebookF/></a>
+        <a target='_blank' href='https://twitter.com/tanzimr8'><FaXTwitter/></a>
         {/* <HiOutlineArrowLongDown /> */}
       </div>
     </div>

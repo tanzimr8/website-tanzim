@@ -65,6 +65,14 @@
                 text-align: center;
 
             }
+            .slider-social-icons-container{
+                display: flex;
+                .slider-social-icons{
+                    a{
+                        margin-left: 15px;
+                    }
+                }
+            }
         }
     }
 .social-icons-container{
